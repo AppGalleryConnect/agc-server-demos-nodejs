@@ -16,7 +16,7 @@ These are the available demos in this repository.
 | [cloudstorage](./cloudstorage) | [![version](https://img.shields.io/badge/Release-1.1.0.300-yellow)](./cloudstorage) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/Overview-nodejs) |
 
 ## Precautions
-The agc-android-demos project contains 1 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
+After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
 
 ## Question or issues
 If you have questions about how to use AppGallery Connect Demos, try the following options:  
