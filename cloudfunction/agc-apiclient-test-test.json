@@ -1,0 +1,9 @@
+{
+	"type":"project_client_id",
+	"developer_id":"xxxx",
+	"project_id":"xxxx",
+	"client_id":"xxxx",
+	"client_secret":"xxxx",
+	"configuration_version":"3.0",
+	"region":"CN"
+}
