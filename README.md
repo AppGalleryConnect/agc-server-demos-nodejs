@@ -13,7 +13,7 @@ These are the available demos in this repository.
 
 | Demo | Version | Documentation |
 |--------|-----|-----|
-| [cloudstorage](./cloudstorage) | [![version](https://img.shields.io/badge/Release-1.0.0-yellow)](./cloudstorage) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/Overview-nodejs) |
+| [cloudstorage](./cloudstorage) | [![version](https://img.shields.io/badge/Release-1.0.1-yellow)](./cloudstorage) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/Overview-nodejs) |
 
 ## Precautions
 After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
