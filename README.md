@@ -9,11 +9,14 @@ about demos, and how to use them, see
 
 
 ## Introduction
-These are the available demos in this repository.
+These are the 4 available demos in this repository.
 
 | Demo | Version | Documentation |
 |--------|-----|-----|
-| [cloudstorage](./cloudstorage) | [![version](https://img.shields.io/badge/Release-1.0.1-yellow)](./cloudstorage) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/Overview-nodejs) |
+| [authservice](./authservice) | [![version](https://img.shields.io/badge/Release-1.1.0-yellow)](./authservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-introduction-0000001053732605) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/agc-auth-service-nodejs-overview-0000001136187342) |
+| [clouddb](./clouddb) | [![version](https://img.shields.io/badge/Release-1.0.8-yellow)](./clouddb) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-clouddb-introduction-0000001054212760) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/clouddb-serverjs-overview-0000001080565592) |
+| [cloudfunction](./cloudfunction) | [![version](https://img.shields.io/badge/Release-1.0.0-yellow)](./cloudfunction) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudfunction-introduction-0000001059279544) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/overview-nodejs-0000001237952953) |
+| [cloudstorage](./cloudstorage) | [![version](https://img.shields.io/badge/Release-1.0.1-yellow)](./cloudstorage) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-introduction-0000001054847259) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/overview-0000001057539730) |
 
 ## Precautions
 After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
