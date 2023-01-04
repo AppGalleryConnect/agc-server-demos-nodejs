@@ -16,16 +16,16 @@
 5. 在命令行中依次运行如下命令以运行demo：
     ``` bash
     # 1.1 安装 AGC function-server sdk
-    npm install --save @agconnect/common-server@1.0.0
-    npm install --save @agconnect/function-server@1.0.0
+    npm install --save @agconnect/common-server@1.1.0
+    npm install --save @hw-agconnect/function-server@1.0.1
     # 1.2 或向package.json文件添加如下配置,再执行npm install命令
     "dependencies": {
-      "@agconnect/common-server": "1.0.0",
-      "@agconnect/function-server": "1.0.0"
+      "@agconnect/common-server": "1.1.0",
+      "@hw-agconnect/function-server": "1.0.1"
    }
    
-    # 2 启动demo
-    npm run build
+    # 2 本地运行函数
+    node index.js
     ```
 6. 更多细节请查看以下链接： [Function-Server](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-cloudfunction-functioncall-server-nodejs-0000001192526140)
 

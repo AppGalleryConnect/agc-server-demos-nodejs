@@ -1,19 +1,20 @@
 const path = require('path');
 const {AGCClient} = require("@agconnect/common-server");
 const {CredentialParser} = require("@agconnect/common-server");
-const {AGCFunction} = require("@agconnect/function-server");
+const {AGCFunction} = require("@hw-agconnect/function-server");
 
 // 加载凭证文件
 try {
-  console.log("--------agc-------")
-  let client_name = "./agc-apiclient-test-test.json";
-  let client_path = path.join(__dirname, client_name);
-  let credential = CredentialParser.toCredential(client_path);
-  AGCClient.initialize(credential);
+    console.log("--------agc-------")
+    let client_name = "./agc-apiclient-test-test.json";
+    let client_path = path.join(__dirname, client_name);
+    let credential = CredentialParser.toCredential(client_path);
+    AGCClient.initialize(credential);
 } catch (error) {
-  console.error(error);
-  return;
+    console.error(error);
+    return;
 }
+
 let agcFunction = new AGCFunction();
 
 // 本地调用测试
@@ -29,22 +30,17 @@ let myHandlerTest = async function() {
 
         // 无参调用
         let res1 = await value.call();
-        console.log("res1： " + res1.getValue());
+        console.log("res1： " + JSON.stringify(res1.getValue()));
 
-        // string类型传参调用
-        let str = "test s string";
-        let res2 = await value.call(str);
-        console.log("res2： " + res2.getValue());
-
-        // Buffer类型传参调用
-        const buf = Buffer.alloc(10, 1);
-        let res3 = await value.call(buf);
-        console.log("res3： " + res3.getValue());
+        // 有参调用
+        let obj = {"aa": "bb"};
+        let res2 = await value.call(obj);
+        console.log("res2： " + JSON.stringify(res2.getValue()));
 
         console.log("-------成功--------");
     } catch (error) {
-      console.log("-------调用异常-------");
-      console.log(error);
+        console.log("-------调用异常-------");
+        console.log(error);
     }
 }
 
@@ -65,9 +61,19 @@ let myHandler = async function(event, context, callback, logger) {
     }, "application/json", "200");
 
     try {
-        let res = await agcFunction.wrap("callback", "$latest").call();
+        let value = agcFunction.wrap("callback", "$latest");
+        value.setTimeout(20000);
+
         logger.info("---------调用--------");
-        logger.info("res: " + res.getValue());
+
+        // 无参调用
+        let res1 = await value.call();
+        logger.info("res1： " + JSON.stringify(res1.getValue()));
+
+        // 有参调用
+        let obj = {"aa": "bb"};
+        let res2 = await value.call(obj);
+        logger.info("res2： " + JSON.stringify(res2.getValue()));
 
         logger.info("-------成功--------");
         callback(good_res);
